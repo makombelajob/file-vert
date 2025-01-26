@@ -10,6 +10,7 @@
     --dsp-none : none;
     --clr-black : black;
     --clr-white : white;
+    --gb-clr : #5c9ed496;
     --bx-shadow : 2px 2px 4px var(--clr-black);
 }
 
@@ -28,6 +29,14 @@ header {
     display: var(--dsp-flex);
     gap: 2rem;
     align-items: var(--alin-itm);
+    position : fixed;
+    top :0;
+    left: 0;
+    right: 0;
+    border-bottom : 1px solid var(--clr-black);
+    z-index: 10;
+    background: linear-gradient(to right, rgba(92, 158, 212, 0.233), rgba(92, 158, 212, 0.8));
+    border-radius: 10px; ;
     h2{
         margin :0;
         a {
@@ -51,7 +60,7 @@ header {
             right: 1rem;
             top : 1.4rem;
         }
-        ul {
+        .open {
             list-style : var(--lst-style);
             display: var(--dsp-none); /* have to active later */
             li a {
@@ -65,7 +74,7 @@ header {
 /* the main style of body */
 main {
     margin: 0.3rem;
-    border-top : 1px solid var(--clr-black);
+    margin-top : 4rem;
     h1 {
         text-align: var(--alin-itm);
     }
@@ -169,6 +178,7 @@ footer {
         padding: 0.5rem;
         border-top : 1px solid var(--clr-black);
         margin-bottom : 0;
+        background: linear-gradient(to right, rgba(92, 158, 212, 0.233), rgba(92, 158, 212, 0.8));
     }
 }
 
@@ -185,5 +195,21 @@ footer {
         }
         100% {
             transform : translateX(0);
+    }
+}
+
+/* query for 768 px screen */
+@media (min-width: 768px) {
+    :root {
+        font-size: 20px;
+    }
+    header {
+        justify-content: space-between;
+        h2 {
+            font-size: 2rem;
+        }
+        nav .burger {
+            top : 15px;
+        }
     }
 }
