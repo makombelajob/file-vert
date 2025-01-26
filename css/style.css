@@ -114,6 +114,10 @@ main {
         padding : 0.7rem;
         box-shadow: var(--bx-shadow);
         border-radius: 1rem;
+        &:hover {
+            background-color: var(--clr-black);
+            color: var(--clr-white);
+        }
     }
 
     /* style for form */
@@ -126,7 +130,9 @@ main {
             border: none;
         }
         h2{
+            font-size: 1.5rem;
             text-align: var(--txt-alin-ctr);
+
         } 
         figure {
             img {
@@ -145,9 +151,27 @@ main {
             text-align: var(--txt-alin-ctr);
             margin : 0.3rem;
         }
+        .submit {
+            text-align: var(--txt-alin-ctr);
+            .sub:hover {
+                background-color: var(--clr-black);
+                color: var(--clr-white);
+            }
+        }
     }
     
 }
+
+/* footer style */
+footer {
+    p{
+        font-size: 1rem;
+        padding: 0.5rem;
+        border-top : 1px solid var(--clr-black);
+        margin-bottom : 0;
+    }
+}
+
 /* mettre les images en mouvement  et fait en tout 100%*/
 @keyframes slide {
         0%, 20% {
