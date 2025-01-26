@@ -9,11 +9,16 @@
     --dsp-grid : grid;
     --dsp-none : none;
     --clr-black : black;
+    --bx-shadow : 2px 2px 4px var(--clr-black);
 }
 
 html, body {
     margin : 0;
     padding : 0;
+    font-family: "Ubuntu Sans Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: normal;
 }
 
 header {
@@ -54,8 +59,62 @@ header {
 
 /* the main style of body */
 main {
+    margin: 0.3rem;
     border-top : 1px solid var(--clr-black);
     h1 {
         text-align: var(--alin-itm);
+    }
+    .slide {
+        position: relative;
+        overflow: hidden; /* annuler le debordement */
+        text-align: var(--txt-ali);
+        figure{
+            display: flex;
+            width: 100%;
+            margin: 0;
+            padding: 0; 
+            animation: slide 9s infinite; /* activer l'animation */
+            img {
+                width: 100%;
+                height: auto;
+                flex-shrink: 0;
+            }
+
+        }
+    }
+    /* accueil style */
+    .accueil, .propos {
+        margin: 1rem;
+        box-shadow: var(--bx-shadow);
+        padding: 0.7rem;
+        border-radius: 0.5rem;
+        margin-top: 0.2rem;
+        h2 {
+            font-size: 1.5rem;
+            text-align: var(--txt-alin-ctr);
+        }
+        > article figure {
+            width: 100%;
+            margin: 0;
+        }
+        p{
+            text-align: start;
+        }
+    } 
+    
+}
+/* mettre les images en mouvement  et fait en tout 100%*/
+@keyframes slide {
+        0%, 20% {
+            transform : translateX(0); 
+        }
+        33.33%, 53.33% {
+            transform : translateX(-100%);
+        }
+        66.6%, 86.66% {
+            transform : translateX(-200%);
+        }
+        100% {
+            transform : translateX(0);
     }
 }
