@@ -3,9 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CYBERNET</title>
+    <title>TECH-NET</title>
 </head>
 <body>
+    <header>
+        <h2>TECH-NET</h2>
+        <figure>
+            <img src="media/Logo.png" alt="Logo du site" width="100%" height="auto">
+        </figure>
+        <div class="burger">
+            &#9776;
+        </div>
+        <nav>
+            <ul>
+                <li>Accueil</li>
+                <li>A propos</li>
+                <li>Signup</li>
+                <li>Login</li>
+                <li>Nous Contacter</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="slide">
+            <h1>TECH-NET</h1>
+            <figure>
+                <img src="media/slide/1.jpg" type="jpg/mpeg" alt="image du slide" width="100%" height="auto" >
+                <img src="media/slide/2.jpg" type="jpg/mpeg" alt="image 2 du slide" width="100%" height="auto" >
+                <img src="media/slide/3.jpg" type="jpg/mpeg" alt="image 3 du slide" width="100%" height="auto" >
+            </figure>
+        </section>
+        <section class="accueil" id="accueil">
+            <h2>Accueil</h2>
+            <article>
+                <figure>
+                    <img src="" alt="">
+                </figure>
+            </article>
+            <article>
+                <h2>Bienvenue chez <strong>TECH-NET</strong></h2>
+                <p>
+                    Bienvenue sur le site de <strong>TECH-NET</strong>, l'école dédiée à la formation des experts en informatique de demain ! Si vous êtes passionné par la technologie et souhaitez faire carrière dans l’un des secteurs les plus dynamiques du monde, vous êtes au bon endroit. Explorez nos formations, découvrez nos valeurs et rejoignez une communauté de futurs professionnels prêts à changer le monde grâce à la puissance de l'informatique.
+                </p>
+            </article>
+        </section>
+        <section class="porpos" id="propos">
+            <h2>A propos de TECH-NET</h2>
+            <article>
+                <figure>
+                    <img src="" alt="">
+                </figure>
+            </article>
+            <article>
+                <p>
+                    Chez TECH-NET, nous formons les talents de demain dans le domaine de l'informatique. Notre école se distingue par son approche moderne et dynamique de l'enseignement, en offrant des formations adaptées aux défis numériques du monde actuel. Que ce soit en gestion de bases de données comme en cybersécurité , nos étudiants bénéficient d'une pédagogie innovante et de l'accompagnement d'experts du secteur.
+
+                    Nous croyons que la technologie est un levier puissant pour changer le monde, et c’est pourquoi nous nous engageons à fournir une éducation de qualité, pratique et tournée vers l'avenir. Nos formations sont conçues pour répondre aux besoins du marché de l'emploi et garantir à nos diplômés des compétences solides et recherchées.
+                </p>
+                <a href="html/a-propos.html">Voir plus</a>
+            </article>
+        </section>
+        <section class="contact" id="contact">
+            <fieldset>
+                <h2>Nous contacter</h2>
+                <figure>
+                    <img src="media/Logo.png" alt="Logo de l'école" width="100%" height="auto">
+                </figure>
+                <form action="">
+                    <div>
+                        <label for="email" id="email" type="email" >Email :</label>
+                        <input type="email" class="email" id="email" required placeholder="your email is required">
+                    </div>
+                    <div>
+                        <label for="subject" class="subject" id="subject">Votre Sujet :</label>
+                        <select name="choice" id="choice" required>
+                            <option value="0"> ==== Choisissez votre sujet ====</option>
+                            <option value="1">Demande Informations</option>
+                            <option value="2">Demande de Dévis</option>
+                            <option value="3">Demande d'incriptions</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message" type="message" id="message">Message :</label>
+                        <textarea name="message" id="area" cols="30" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="check-box" required>
+                        <label for="checkbox" id="check"> Vous accépter que vos données soit stocker dans notre système</label>
+                        <p>Toutes les cases sont obligatoires </p>
+                    </div>
+                    <div>
+                        <button type="submit" id="submit">Envoyer</button>
+                    </div>
+                </form>
+            </fieldset>
+        </section>
+
+    </main>
+    <footer>
+        <section>
+            <article>
+                <h3>Liens utiles</h3>
+                <ul>
+                    <li><a href="#about">À propos de nous</a></li>
+                    <li><a href="#programmes">Nos formations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </article>
+            <article>
+                <h3>Contact</h3>
+                <p>Email : <a href="mailto:contact@tech-net.com">contact@tech-net.com</a></p>
+                <p>Téléphone : +33 1 23 45 67 89</p>
+            </article>
+            <article>
+                <h3>Suivez-nous</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/tech-net" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.twitter.com/tech-net" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.linkedin.com/company/tech-net" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/tech-net" target="_blank">Instagram</a></li>
+                </ul>
+            </article>
+            <article>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 TECH-NET | Tous droits réservés.</p>
+                </div>
+            </article>  
+        </section>
+    </footer>
     
 </body>
 </html>
