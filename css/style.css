@@ -9,6 +9,7 @@
     --dsp-grid : grid;
     --dsp-none : none;
     --clr-black : black;
+    --clr-white : white;
     --bx-shadow : 2px 2px 4px var(--clr-black);
 }
 
@@ -29,6 +30,10 @@ header {
     align-items: var(--alin-itm);
     h2{
         margin :0;
+        a {
+            color: var(--clr-black);
+            text-decoration: var(--txt-dec);
+        }
     }
     figure {
         margin : 0;
@@ -65,11 +70,11 @@ main {
         text-align: var(--alin-itm);
     }
     .slide {
-        position: relative;
+        position: relative; /* debut du slide */
         overflow: hidden; /* annuler le debordement */
         text-align: var(--txt-ali);
         figure{
-            display: flex;
+            display: flex; /* photo side by side */
             width: 100%;
             margin: 0;
             padding: 0; 
@@ -89,6 +94,7 @@ main {
         padding: 0.7rem;
         border-radius: 0.5rem;
         margin-top: 0.2rem;
+        text-align: var(--txt-alin-ctr);
         h2 {
             font-size: 1.5rem;
             text-align: var(--txt-alin-ctr);
@@ -101,6 +107,45 @@ main {
             text-align: start;
         }
     } 
+
+    /* the main style of btn class */
+    .btn {
+        text-decoration: var(--txt-dec);
+        padding : 0.7rem;
+        box-shadow: var(--bx-shadow);
+        border-radius: 1rem;
+    }
+
+    /* style for form */
+    .contact {
+        box-shadow: 2px 2px 4px var(--clr-black);
+        border-radius: 1rem;
+        color: var(--clr-white);
+        background-color: var(--clr-black);
+        fieldset {
+            border: none;
+        }
+        h2{
+            text-align: var(--txt-alin-ctr);
+        } 
+        figure {
+            img {
+            width: 80px;
+            border-radius: 50%;
+            border: 2px solid rgba(175, 155, 43, 0.541);
+            margin-right: 0;
+            margin-left: 60px;
+            }
+        }
+        input:not([type="checkbox"]),
+        select,
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+            text-align: var(--txt-alin-ctr);
+            margin : 0.3rem;
+        }
+    }
     
 }
 /* mettre les images en mouvement  et fait en tout 100%*/
