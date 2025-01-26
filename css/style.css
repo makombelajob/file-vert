@@ -208,8 +208,56 @@ footer {
         h2 {
             font-size: 2rem;
         }
-        nav .burger {
-            top : 15px;
+        figure img {
+            width:70px;
         }
+        nav .burger {
+            top : 25px;
+        }
+    }
+    main > div {
+        display: var(--dsp-grid);
+        grid-template-columns: 1fr 1fr;
+    }
+    footer {
+        text-align: var(--alin-itm);
+    }
+    
+}
+
+/* the main style of 1024px */
+@media(min-width: 1024px){
+    :root {
+        font-size : 24px;
+    }
+    body,html {
+        height: 100vh;
+    }
+    header{
+        h2 {
+            font-size:1.3rem;
+        }
+        figure img {
+            width : 100px;
+        }
+        nav {
+            .burger{
+                display: none;
+            }
+            .open {
+                display: block;
+                position: static;
+                li {
+                    display: inline;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    footer{
+        position : fixed;
+        bottom : 0;
+        right: 0;
+        left: 0;
     }
 }
