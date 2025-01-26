@@ -1,0 +1,61 @@
+:root {
+    font-size: 14px;
+    --txt-ali : none;
+    --txt-alin-ctr : center;
+    --alin-itm : center;
+    --txt-dec : none;
+    --lst-style : none;
+    --dsp-flex : flex;
+    --dsp-grid : grid;
+    --dsp-none : none;
+    --clr-black : black;
+}
+
+html, body {
+    margin : 0;
+    padding : 0;
+}
+
+header {
+    margin : 0;
+    padding : 0.5rem;
+    display: var(--dsp-flex);
+    gap: 2rem;
+    align-items: var(--alin-itm);
+    h2{
+        margin :0;
+    }
+    figure {
+        margin : 0;
+        img {
+        width: 50px;
+        border-radius: 50%;
+        }
+    }
+    nav {
+        .burger{
+            border: 1px solid var(--clr-black);
+            font-size: 1.5rem;
+            border-radius : 0.4rem;
+            position: absolute;
+            right: 1rem;
+            top : 1.4rem;
+        }
+        ul {
+            list-style : var(--lst-style);
+            display: var(--dsp-none); /* have to active later */
+            li a {
+                color : var(--clr-black);
+                text-decoration: var(--txt-dec);
+            }
+        }
+    }
+}
+
+/* the main style of body */
+main {
+    border-top : 1px solid var(--clr-black);
+    h1 {
+        text-align: var(--alin-itm);
+    }
+}
