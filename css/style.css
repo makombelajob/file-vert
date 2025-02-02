@@ -33,6 +33,7 @@ header {
     display: var(--dsp-flex);
     gap: 2rem;
     align-items: var(--alin-itm);
+    justify-content: flex-start;
     position: fixed;
     top: 0;
     left: 0;
@@ -50,6 +51,7 @@ header {
     }
     figure {
         margin: 0;
+        margin-left: 1.5rem;
         img {
             width: 50px;
             border-radius: 50%;
@@ -226,8 +228,13 @@ footer {
         h2 {
             font-size: 2rem;
         }
-        figure img {
-            width: 70px;
+        figure {
+            margin-right: 5rem;
+            padding: 0;
+            display: var(--dsp-flex);
+            img {
+                width: 70px;
+            }
         }
         nav .burger {
             top: 25px;
@@ -279,11 +286,15 @@ footer {
         height: 100vh;
     }
     header {
+        align-items: var(--alin-itm);
         h2 {
-            font-size: 1.3rem;
+            font-size: 1rem;
         }
-        figure img {
-            width: 100px;
+        figure {
+            margin: 0;
+            img {
+                width: 90px;
+            }
         }
         nav {
             .burger {
@@ -292,6 +303,7 @@ footer {
             .open {
                 display: block;
                 position: static;
+                padding-left: 0;
                 li {
                     display: inline;
                     font-size: 1rem;
@@ -299,7 +311,7 @@ footer {
             }
         }
     }
-    #contact{
+    #contact {
         margin-top: 1.5rem;
     }
     footer {
