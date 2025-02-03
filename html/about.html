@@ -5,22 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/style-about.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
-            <h2><a href="index.html">TECH-NET</a></h2>
-            <img src="media/Logo.png" alt="Logo du site" width="100%"
+        <header>
+            <a href="../index.html">TECH-NET</a>
+            <figure>
+                <img src="../media/Logo.png" alt="Logo du site" width="100%"
                 height="auto">
+            </figure>
             <div class="burger" id="burger">
-                &#9776;
+                <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <line x1="4" y1="6" x2="20" y2="6" />
+                    <line x1="4" y1="12" x2="20" y2="12" />
+                    <line x1="4" y1="18" x2="20" y2="18" />
+                </svg>
             </div>
             <nav>
                 <button>X</button>
                 <ul class="open">
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#a-propos">A propos</a></li>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="#propos">A propos</a></li>
                     <li><a href="#contact">Nous contacter</a></li>
                     <li><a href="#signup">Signup</a></li>
                     <li><a href="#Login">Login</a></li>
@@ -29,7 +44,7 @@
             </nav>
         </header>
     <main>
-        <section>
+        <section class="about">
             <article>
                 <h2>Notre Mission</h2>
                 <p>
