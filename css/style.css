@@ -41,6 +41,9 @@ header {
         font-size: 1.5rem;
         font-weight: 600;
     }
+    .burger{
+        cursor: pointer;
+    }
     figure {
         margin-right: 2.3rem;
         padding: 0.4rem;
@@ -80,6 +83,9 @@ header {
                 }
             }
         }
+    }
+    nav.active{ /* script qui ajoute l'activation*/
+        display: block;
     }
 }
 main section {
