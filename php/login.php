@@ -40,6 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "Connexion réussie !";
             // Rediriger l'utilisateur vers une page protégée
             // header('Location: dashboard.php');
+            header('Location : dashboard.php ');
             exit;
         } else {
             echo "Identifiants incorrects. Veuillez vérifier votre email et votre mot de passe.";

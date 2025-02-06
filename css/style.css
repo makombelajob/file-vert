@@ -74,12 +74,16 @@ header {
             border-radius: 50%;
         }
         ul {
+            text-align: start;
+            padding-left: 3rem;
+            padding-top: 2rem;
             li {
-                padding: 0.3rem;
+                padding-block: 1rem;
                 margin: 0;
                 a {
                     text-decoration: var(--txt-dec);
                     color: bisque;
+                    font-size: 1.5rem;
                 }
             }
         }
