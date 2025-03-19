@@ -1,0 +1,22 @@
+:root {
+  font-size: 10px;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 1.5rem;
+}
+header nav img {
+  width: 5rem;
+  border-radius: 50%;
+}
+header nav .open {
+  display: none;
+}/*# sourceMappingURL=styles.css.map */
